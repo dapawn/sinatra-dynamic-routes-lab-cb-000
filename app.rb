@@ -2,13 +2,12 @@ require_relative 'config/environment'
 
 class App < Sinatra::Base
 
-  get '/square/:number' do
-    "The square is #{params[:number].to_i * params[:number].to_i}"
-  end
-
-  # This is a sample dynamic route.
   get "/reversename/:name" do
     "#{params[:name].reverse}"
+  end
+
+  get '/square/:number' do
+    "The square is #{params[:number].to_i * params[:number].to_i}"
   end
 
   get "/say/:number/:phrase" do
