@@ -32,7 +32,7 @@ class App < Sinatra::Base
     else
       "Did not recognize operation params[:operation]. Expected add, subtract, multiply, or '"
     end
-      
+
   end
 
 end
