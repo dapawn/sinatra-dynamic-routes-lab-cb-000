@@ -31,6 +31,8 @@ class App < Sinatra::Base
       "The quotient is #{params[:number1].to_i / params[:number2].to_i}"
     else
       "Did not recognize operation params[:operation]. Expected add, subtract, multiply, or '"
+    end
+      
   end
 
 end
